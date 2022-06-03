@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Página de base</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Gabriel">
+        <meta name="description" content="html5, tecnologia">
+        <style>
+          div{
+            border: 3px solid red;
+            padding: 25px;
+            position: relative;
+            margin: auto;
+          }
+          div::before{
+            content: "before ";
+            background-color: #ccc;
+          }
+          div::after{
+            content: '';
+            background-color: red;
+            width: 25px;
+            height: 25px;
+            display: inline-block;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+          }
+        </style>
+    </head>
+    <body>
+      <div>Texto principal da div</div>
+        <article>
+          <h3>titulo</h3>
+          <p>paragrafo <a href="#"> apenas um link com <b>negrito</b></a></p>
+          <p>paragrafo <a href="#"> apenas um link com <b>negrito</b></a></p>
+          <p>paragrafo <a href="#"> apenas um link com <b>negrito</b></a></p>
+        </article>
+        
+        <ul>
+            <li><a href="#">link falso</a></li>
+            <li><a href="#">link falso</a></li>
+            <li><a href="https://google.com">link externo</a></li>
+            <li><a href="24_seletores.html" title="veja o exercio anterior" target="_blank">link interno</a></li>
+            <li><a href="24_seletores.pdf" target="_blank">link interno pdf</a></li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Página de base</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Gabriel" />
+    <meta name="description" content="html5, tecnologia" />
+    <style>
+      li ul{
+        height: 0;
+        overflow: hidden;
+      }
+      li:hover{
+        background-color: gray;
+      }
+      li:hover ul{
+        height: 50px;
+        transition: height 300ms linear;
+      }
+
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>item 1</li>
+      <li>
+        item 2
+        <ul>
+          <li>item 2.1</li>
+          <li>item 2.2</li>
+        </ul>
+      </li>
+      <li>item 3</li>
+    </ul>
+    <hr>
+    <dl>
+      <dt>HTML</dt>
+      <dd>Linguagem de marcação de Hypertexto</dd>
+      <dt>CSS</dt>
+      <dd>Linguagem para a criação de folhas de estilos</dd>
+    </dl>
+    <hr>
+
+    <dl>
+      <dt>www</dt>
+      <dt>Internet</dt>
+      <dd>rede mundial de computadores</dd>
+      <dt>Javascript</dt>
+      <dd>Linguagem script para internet</dd>
+      <dd>Script para rodar no browser</dd>
+    </dl>
+  </body>
+</html>

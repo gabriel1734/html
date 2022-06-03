@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Página de base</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Gabriel" />
+    <meta name="description" content="html5, tecnologia" />
+    <style>
+      html, body{
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      .div1{
+        width: 150px;
+        height: 50px;
+        background-color: orange;
+        transform: translate(50%, 50%);
+        /* position: relative;
+        top: 100px;
+        left: 100px; */
+      }
+      .div2{
+        width: 150px;
+        height: 50px;
+        background-color: blue;
+        position: relative;
+        left: 50%;
+      }
+      .div3{
+        width: 50%;
+        overflow: hidden;
+        border: solid 2px black;
+
+      }
+      .div3-interna{
+        background-color: yellow;
+        transform: translate(80%, 5px);
+      }
+      .div4{
+        width: 50%;
+        overflow: hidden;
+        border: solid 2px black;
+
+      }
+      .div4-interna{
+        background-color: yellow;
+        transform: rotate(-45deg);
+      }
+      .div5{
+        width: 50%;
+        overflow: hidden;
+        border: solid 2px black;
+
+      }
+      .div5-interna{
+        background-color: yellow;
+        transform: rotate(-20deg);
+        transform-origin: left top;
+      }
+       .div6{
+        width: 50%;
+        overflow: hidden;
+        border: solid 2px black;
+
+      }
+      .div6-interna{
+        background-color: yellow;
+        transform: rotate(-20deg) translate(30px);
+      }
+       .div7{
+        width: 50%;
+        overflow: hidden;
+        border: solid 2px black;
+
+      }
+      .div7-interna{
+        background-color: yellow;
+        transform: translate(50%) rotate(-20deg);
+      }
+      .div8{
+        width: 100px;
+        height: 100px;
+        background-color: orange;
+        transform: skew(-50deg, 40deg);
+      }
+      .div9{
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        transform: scale(1.5, 2) translateX(150%);
+        transition: all .5s;
+      }
+      .div9:hover{
+        transform: scale(4);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div1">div1</div>
+    <div class="div2">div2</div>
+    <div class="div3">
+      <div class="div3-interna">conteúdo qualquer</div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti ipsam quisquam vero vel labore excepturi? Ullam recusandae voluptate earum numquam.
+      </p>
+    </div>
+    <hr>
+    <div class="div4">
+      <div class="div4-interna">conteúdo qualquer</div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti ipsam quisquam vero vel labore excepturi? Ullam recusandae voluptate earum numquam.
+      </p>
+    </div>
+     <hr>
+    <div class="div5">
+     <div class="div5-interna">conteúdo qualquer</div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti ipsam quisquam vero vel labore excepturi? Ullam recusandae voluptate earum numquam.
+      </p>
+    </div>
+         <hr>
+    <div class="div6">
+     <div class="div6-interna">conteúdo qualquer</div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti ipsam quisquam vero vel labore excepturi? Ullam recusandae voluptate earum numquam.
+      </p>
+    </div>
+    <hr>
+    <div class="div7">
+     <div class="div7-interna">conteúdo qualquer</div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti ipsam quisquam vero vel labore excepturi? Ullam recusandae voluptate earum numquam.
+      </p>
+    </div>
+    <hr>
+    <div class="div8">div9</div>
+    <div class="div9">div9</div>
+  </body>
+</html>

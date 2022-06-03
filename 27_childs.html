@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Página de base</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Gabriel">
+        <meta name="description" content="html5, tecnologia"> 
+        <style>
+          div p:nth-of-type(2n - 1){
+            color: red;
+          }
+          .destaque{
+            background-color: #ddd;
+          }
+          .destaque:nth-of-type(1){
+            color: green;
+          }
+          .destaque:first-child{
+            color: blue;
+          }
+          p:last-child{
+            color: orange;
+          }
+
+        </style>
+    </head>
+    <body>
+        <div>
+          <p class="destaque">meu paragrafo</p>
+          <p>meu paragrafo</p>
+          <hr>
+          <p>meu paragrafo</p>
+          <p>meu paragrafo</p>
+          <hr>
+          <p>meu paragrafo</p>
+          <p>meu paragrafo</p>
+          <hr>
+          <p class="destaque">meu paragrafo</p>
+          <p>meu paragrafo</p>
+          <hr>
+          <p>meu paragrafo</p>
+          <p>meu paragrafo</p>
+        </div>
+    </body>
+</html>

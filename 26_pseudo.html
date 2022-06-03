@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Página de base</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Gabriel">
+        <meta name="description" content="html5, tecnologia"> 
+        <style>
+          label{
+            cursor: pointer;
+          }
+          input[type='checkbox']{
+            transition: 850ms;
+            width: 100px;
+            height: 100px;
+          }
+          input[type='checkbox']:checked{
+            width: 10px;
+            height: 10px;
+          }
+          button:disabled{
+            background-color: aqua;
+          }
+          p{
+            color: red;
+          }
+          p:empty::before{
+            content: "paragrafo vazio";
+          }
+          input[type="text"]:focus{
+            background-color: yellow;
+          }
+          a:focus, a:hover, div:focus{
+            transition: 850ms;
+            background-color: red;
+            color: white;
+          }
+          input::placeholder{
+            color: red;
+          }
+          input:read-only{
+            color: green;
+          }
+        </style>
+    </head>
+    <body>
+        <label><input type="checkbox" name="check" value="sim"> Aceito o contrato</label>
+        <button>Vai</button>
+        <button disabled>volta</button>
+        <p>paragrafor 1</p>
+        <p> </p>
+        <p></p>
+        <hr>
+        <input type="text" name="tex" id="">
+        <input type="text" name="tex" value="Valor inicial">
+        <input type="email" name="tex" value="Valor inicial" readonly>
+        <input type="text" name="tex" value="Valor inicial" disabled>
+        <input type="text" name="tex" placeholder="Valor inicial do placeholder" max="10">
+        <ul>
+          <li><a href="#">link falso</a></li>
+          <li><a href="#">link falso</a></li>
+          <li><a href="#">link falso</a></li>
+        </ul>
+        <div tabindex="1">div 1</div>
+        <div tabindex="2">div 2</div>
+        <div tabindex="3">div 3</div>
+      </body>
+</html>

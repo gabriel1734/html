@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Página de base</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Gabriel">
+        <meta name="description" content="html5, tecnologia"> 
+        <meta name="viewport" content="width=device-width">
+        <style>
+          body{
+            background-color: yellow;
+            transition: all .5s;
+            font-size: 16px;
+          }
+          .teste{
+            background-color: red;
+            width: 320px;
+            height: 50px;
+          }
+
+          .container{
+            background-color: white;
+            padding: 15px;
+          }
+
+          .container div{
+            background-color: #ccc;
+            margin-bottom: 15px;
+            height: 150px;
+            font-size: 24px;
+          }
+
+          .clearfix::after{
+            content: '';
+            display: block;
+            clear: both;
+          }
+
+          @media screen and (min-width: 400px){
+            body{
+              background-color: orange;
+            }
+            .container div{
+              margin: 10px;
+              width: calc(50% - 20px);
+              float: left;
+            }
+          }
+
+        </style>
+    </head>
+    <body>
+        <h1>Exemplo de media queries</h1>
+        <p>Paragráfo qualquer</p>
+        
+        <!-- <div class="teste"></div> -->
+        
+        <div class="container clearfix">
+          <div>div 1</div>
+          <div>div 2</div>
+        </div>
+    </body>
+</html>

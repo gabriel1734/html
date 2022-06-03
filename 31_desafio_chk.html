@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Página de base</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Gabriel">
+        <meta name="description" content="html5, tecnologia">
+        <style>
+          *{
+            margin: 0;
+            font-family: sans-serif;
+          }
+          .main{
+            display: flex;
+            justify-content: center;
+          }
+          label{
+            margin-top: 150px;
+            padding: 10px;
+            font-size: 28px;
+          }
+          label span{
+            display: inline-block;
+            width: 60px;
+            height: 30px;
+            background-color: #bbb;
+            border-radius: 15px;
+            position: relative;
+          }
+          span::before{
+            transition: all 250ms ease-in-out;
+            content: '';
+            position: absolute;
+            top: 2px;
+            left: 4px;
+            bottom: 0;
+            right: 0;
+            border-radius: 50%;
+            display: block;
+            width: 25px;
+            height: 25px;
+            background-color: #ddd;
+          }
+           input[type='checkbox']{
+             opacity: 0;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+            
+          }
+          label input:focus + span{
+            box-shadow: 0 0 0 2px red;
+          }
+           input[type='checkbox']:checked + span::before{
+            background-color: red;
+            top: 2px;
+            left: 30px;
+            bottom: 0;
+            right: 0px;
+          }
+        </style> 
+    </head>
+    <body>
+      <div class="main">
+        <label>
+          <input type="checkbox">
+          <span></span>
+          Esporte
+        </label>
+        <label>
+          <input type="checkbox">
+          <span></span>
+          Política
+        </label>
+        <label>
+          <input type="checkbox">
+          <span></span>
+          Educação
+        </label>
+      </div>
+    </body>
+</html>

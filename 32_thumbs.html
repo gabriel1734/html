@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Página de base</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Gabriel">
+        <meta name="description" content="html5, tecnologia"> 
+        <style>
+          *{
+            font-family: sans-serif;
+          }
+          a{
+            display: inline-block;
+            margin: 10px;
+            position: relative;
+
+          }
+          a img{
+            display: block;
+            max-width: 100%;
+            object-fit: cover;
+            display: block;
+          }
+          a::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            transition: all .5s;
+          }
+          a:hover::before{
+            background-color: rgba(0,0,0,.5);
+          }
+          a::after{
+            opacity: 0;
+            transition: all 850ms;
+          }
+          a:hover::after{
+            content: 'Veja mais';
+            display: inline-block;
+            position: absolute;
+            border: 3px solid white;
+            color: white;
+            top: 50%;
+            left: 50%;
+            border-radius: 10px;
+            padding: 10px 20px;
+            transform: translate(-50%, -50%);
+            opacity: 1;
+          }
+
+        </style>
+    </head>
+    <body>
+        <h1>estrutura básica</h1>
+        <section>
+          <article>
+            <a hre6="#">
+              <img src="imagens/thumbs/01.jpg" alt="">
+            </a>
+          </article>
+          <article>
+            <a href="#">
+              <img src="imagens/thumbs/02.jpg" alt="">
+            </a>
+          </article>
+          <article>
+            <a href="#">
+              <img src="imagens/thumbs/03.jpg" alt="">
+            </a>
+          </article>
+          <article>
+            <a href="#">
+              <img src="imagens/thumbs/04.jpg" alt="">
+            </a>
+          </article>
+          <article>
+            <a href="#">
+              <img src="imagens/thumbs/05.jpg" alt="">
+            </a>
+          </article>
+          <article>
+            <a href="#">
+              <img src="imagens/thumbs/06.jpg" alt="">
+            </a>
+          </article>
+        </section>
+    </body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Página de base</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Gabriel" />
+    <meta name="description" content="html5, tecnologia" />
+  </head>
+  <style>
+    h1 {
+      margin: auto;
+      display: flex;
+      justify-content: center;
+    }
+    form {
+      max-width: 40%;
+      margin: auto;
+    }
+  </style>
+  <body>
+    <h1>Exemplo de formulário</h1>
+    <form action="#" method="get" class="formLogin">
+      <fieldset>
+        <legend>Dados pessoais</legend>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Digite um email aqui" required />
+        <label for="filhos">Número de filhos</label>
+        <input
+          type="number"
+          name="filho"
+          id="filho"
+          min="0"
+          max="1000"
+          required
+          step="0.2"
+        />
+        <label for="data">nascimento</label>
+        <input
+          type="date"
+          name="data"
+          id="data"
+          min="2018-01-30"
+          max="2020-01-30"
+        />
+        <p>Sexo:</p>
+        <label for="masc"
+          >Masculino
+          <input type="radio" name="sexo" id="masc" value="M" checked
+        /></label>
+        <label
+          >Feminino <input type="radio" name="sexo" id="Feminino" value="F"
+        /></label>
+        <br />
+        <label for="state">Estado</label>
+        <select name="state" id="state">
+          <option value="0">Selcione</option>
+          <option value="SP">São Paulo</option>
+          <option value="RJ">Rio de Janeiro</option>
+          <option value="MG">Minas Gerais</option>
+        </select>
+        <br />
+      </fieldset>
+      <fieldset>
+        <legend>Área de interesse</legend>
+        <label> <input type="checkbox" name="html" id="html" />HTML </label>
+        <label> <input type="checkbox" name="CSS" id="html" />CSS </label>
+        <label>
+          <input type="checkbox" name="javascript" id="html" />Javascript
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Mensagem</legend>
+        <textarea
+          name="msg"
+          id="msg"
+          cols="75"
+          style="resize: none"
+          rows="10"
+          maxlength="5"
+        >
+Aqui entra o texto do contrato
+        </textarea>
+
+        <label
+          ><input type="checkbox" name="aceite" id="aceite" />Li e aceito</label
+        >
+        <label><input type="file" />Anexo de arquivo</label>
+        <label><input type="range" min="0" max="10" step="1" />Range</label>
+        <label><input type="time" />Time</label>
+        <label><input type="color" />Color</label>
+        <label><input type="tel" required />Telefone</label>
+        <select multiple size="5">
+          <option value="0">opção 0</option>
+          <option value="1">opção 1</option>
+          <option value="2">opção 2</option>
+          <option value="3">opção 3</option>
+          <option value="4">opção 4</option>
+        </select>
+      </fieldset>
+      <input type="submit" value="Mandar" />
+      <input type="button" value="Button" />
+      <input type="reset" value="Reset" />
+    </form>
+  </body>
+</html>
