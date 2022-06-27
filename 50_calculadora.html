@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .background{
+      background-color: #ccc;
+      max-width: 15%;
+      margin: 50px auto;
+      border-radius: 5px;
+      box-shadow: 0px 0px 2px 20px #ccc;
+    }
+    .btns{
+      display: grid;
+      gap: 5px;
+      grid-template-columns: repeat(4, [col-start] 1fr [col-end]);
+      grid-template-rows: repeat(6, [row-start] 50px [row-end]);
+    }
+    .btns button{     
+      font-size: 18px;
+    }
+    .mais{
+      background-color: #ccc;
+      grid-column: col-start 4;
+      grid-row: row-start 5 / row-end 6;
+    }
+    .zero{
+      background-color: #ccc;
+      grid-column: col-start 1 / col-end 2;
+    }
+    .mais, .zero, .calculator{
+      box-shadow: inset 3px 2px 0 white;
+    }
+    .calculator{
+      background-color: rgb(227, 244, 245);
+      grid-row: row-start 1;
+      grid-column: col-start 1 / col-end 4;
+      font-size: 2em;
+      text-align: right;
+    }
+    @media screen and (max-width: 480px) {
+      .background{
+        max-width: 50%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="background">
+    <div class="btns">
+      <div class="calculator">0</div>
+      <button>AC</button> <button>%</button><button>x</button><button>/</button>
+      <button>7</button><button>8</button><button>9</button><button>=</button>
+      <button>4</button><button>5</button><button>6</button><button>-</button>
+      <button>1</button><button>2</button><button>3</button><button class="mais">+</button>
+      <button class="zero">0</button> <button>,</button>
+    </div>
+  </div>
+
+</body>
+</html>
