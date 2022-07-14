@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Página de base</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Gabriel">
+        <meta name="description" content="html5, tecnologia">
+      <style>
+        @keyframes slide{
+          0%, 22%, 100%{
+            transform: translateY(0);
+            
+          }
+          25%, 47%{
+            transform: translateY(-80vh);
+          }
+          50%, 72%{
+            transform: translateY(-160vh);
+          }
+          75%, 97%{
+            transform: translateY(-240vh);
+          }
+        }
+        body{
+          font-family: sans-serif;
+          color: white;
+          background-color: #1a1818;
+          margin: 0;
+        }
+        .slide-externo{
+          width: 80vw;
+          height: 80vh;
+          border: 10px solid white;
+          box-shadow: 0 0 10px black;
+          margin: auto;
+          overflow: hidden;
+          box-sizing: border-box;
+        }
+        .slide-interno{
+          width: 100%;
+          animation: slide 18s infinite ease-in-out;
+        }
+        .slide-interno img{
+          height: 80vh;
+          display: block;
+          width: 100%;
+          object-fit: cover ;
+          object-position: 20% 80%;
+        }
+      </style>
+    </head>
+    <body>
+        <h2>Animation - slideshow</h2>
+        <div class="slide-externo">
+          <div class="slide-interno">
+            <img src="imagens_slideshow/slide1.jpg" alt="dog 1">
+            <img src="imagens_slideshow/slide2.jpg" alt="dog 2">
+            <img src="imagens_slideshow/slide3.jpg" alt="dog 3">
+            <img src="imagens_slideshow/slide4.jpg" alt="dog 4">
+          </div>
+        </div>
+    </body>
+</html>
