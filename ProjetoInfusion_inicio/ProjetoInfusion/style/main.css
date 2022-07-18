@@ -22,12 +22,22 @@ img{
 .header{
   background: #fff;
 }
+.js .header{
+  position: fixed;
+  width: 100vw;
+}
+.row{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
 .logo-text{
+  max-width: 20vw;
   display: block;
   background-color: #63c6ae;
   margin: 0;
   padding: 20px;
-  justify-content: space-between;
 }
 .logo-text a{
   text-transform: uppercase;
@@ -36,9 +46,25 @@ img{
   text-decoration: none;
   color: #fff;
 }
+.header__btnMenu{
+  margin-right: 2em;
+  height: 10vh;
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+}
+.sr_only{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
 .header__nav{
   clear: left;
-  
 }
 .header__nav ul{
   margin: 0;
@@ -334,5 +360,8 @@ img{
   }
   .footer .container > *{
     margin: 1.5em;
+  }
+  .header__btnMenu{
+    display: none;
   }
 }
