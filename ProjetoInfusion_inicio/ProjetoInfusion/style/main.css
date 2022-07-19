@@ -25,24 +25,31 @@ img{
 .js .header{
   position: fixed;
   width: 100vw;
+  z-index: 10;
 }
 .row{
+  height: 10vh;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
 }
 .logo-text{
-  max-width: 20vw;
-  display: block;
+  height: 100%;
+  width: 30vw;
+  max-width: 60vw;
+  display: flex;
+  align-items: center;
+  justify-content: end;
   background-color: #63c6ae;
   margin: 0;
-  padding: 20px;
+  padding: 0;
 }
 .logo-text a{
+  margin-right: 10px;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 18px;
   text-decoration: none;
   color: #fff;
 }
@@ -91,7 +98,42 @@ img{
   color: #63c6ae;
   background-color: #575f5f;
 }
-.header__btnMenu{
+.js .header__nav{
+  transition: all .5s;
+}
+.js .laptop-slider{
+  overflow: hidden;
+  color: #fff;
+}
+.js .laptop-slider .slideshow{
+  position: relative;
+  width: 100%;
+  margin: auto;
+  max-width: 950px;
+}
+.js .laptop-slider .slideshow figure{
+  opacity: 0;
+  transition: 1s opacity;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.js .laptop-slider .slideshow .show{
+  opacity: 1;
+  position: static;
+}
+.js .laptop-slider .slideshow .prev, .js .laptop-slider .slideshow .next{
+  z-index: 3;
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+}
+.js .laptop-slider .slideshow .prev{
+  left: 10px;
+}
+.js .laptop-slider .slideshow .next{
+  right: 10px;
 }
 .hero{
   height: 80vh;
@@ -311,17 +353,27 @@ img{
   font-weight: 600;
   text-decoration: none;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px){
+  .logo-text a{
+    font-size: 28px;
+  }
+}
+  
+@media screen and (min-width: 1025px) {
   .flex-desk{
     width: 100vw;    
     position: fixed;
     display: flex;
     flex-wrap: nowrap;
+    align-items: center;
   }
   .logo-text{
     min-width: 25vw;
     box-sizing: border-box;
     text-align: end;
+  }
+  .logo-text a{
+    font-size: 28px;
   }
   .header__nav ul{
     display: flex;
