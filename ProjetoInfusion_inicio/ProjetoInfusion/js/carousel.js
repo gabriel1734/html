@@ -1,29 +1,31 @@
 class Carousel{
   constructor(config) {
-    this.container = typeof config.container === 'string' ?
-      document.querySelector(config.container) : config.container;
-    this.itens = typeof config.itens === 'string' ?
-      this.container.querySelectorAll(config.itens) : config.itens;
+    this.container = typeof config.container === 'string' ? document.querySelector(config.container) : config.container;
     
-    this.btnPrev = typeof config.btnPrev === 'string' ?
-      document.querySelector(config.btnPrev) : config.btnPrev;
-    this.btnNext = typeof config.btnNext === 'string' ?
-      document.querySelector(config.btnNext) : config.btnNext;
+    this.itens = typeof config.itens === 'string' ? this.container.querySelectorAll(config.itens) : config.itens;
     
-    let _this = this
+    this.btnPrev = typeof config.btnPrev === 'string' ? this.container.querySelector(config.btnPrev) : config.btnPrev
+    
+    this.btnNext = typeof config.btnNext === 'string' ? this.container.querySelector(config.btnNext) : config.btnNext
+    
+    var _this = this
     let current = 0;
+
+    
     
     init();
 
     function init() {
+     
+      _this.btnPrev.removeAttribute('style');
+      _this.btnNext.removeAttribute('style');
       let show = _this.container.querySelectorAll('.show');
 
       Array.prototype.forEach.call(show, sh => {
         sh.classList.remove('show');
       });
       _this.itens[0].classList.add('show');
-      _this.btnNext.removeAttribute('style');
-      _this.btnPrev.removeAttribute('style');
+     
 
       addListeners();
     }
